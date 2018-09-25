@@ -53,6 +53,6 @@ async def on_message(message):
     if message.content == '/Invite':
         await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
-     await client.send_message(message.channel,'Warning: This bot will not be on 24/7 because of hosting issues but the bot will be in whenever hostable. Also keep in mind that this bot is still in beta.')
+     await client.send_message(message.channel,'This Abomination is made by मुझे गर्व है स्कैमर#5082')
 client.run(os.getenv('TOKEN'))
 
