@@ -4,6 +4,7 @@ from discord.ext import commands
 import asyncio
 import time
 import random
+import os
 from discord import Game
 
 
@@ -18,8 +19,8 @@ async def on_member_join(member):
     await client.send_message(member, 'Good fucking job, you joined absolute cancer')
     print('Sent message to ' + member.name)
 async def on_ready():
-    await client.change_presence(game=Game(name='Watching over fags like you'))
-    print('I hate you') 
+    print("I hate you")
+    await client.chage_presence(game=discord.Game(name="U reading this U gay ha"))
 
 
 @client.event
@@ -29,7 +30,8 @@ async def on_message(message):
     if message.content == 'ORA ORA ORA':
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
     if message.content == 'ur mum gay':
-        await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png')
+        msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
+        await client.send_message(message.channel, msg)
     if message.content.startswith('/Gay?'):
         randomlist = ["yes","no"]
         await client.send_message(message.channel,(random.choice(randomlist)))
@@ -52,4 +54,5 @@ async def on_message(message):
         await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
      await client.send_message(message.channel,'Warning: This bot will not be on 24/7 because of hosting issues but the bot will be in whenever hostable. Also keep in mind that this bot is still in beta.')
-client.run('NDkxNzI0MzA3Mzc4OTk1MjE5.DoMNKg.3zX2o_YSVoo_TEuctOjewwbFrBg')
+client.run(os.getenv('TOKEN'))
+
