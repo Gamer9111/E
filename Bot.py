@@ -9,7 +9,7 @@ from discord import Game
 
 Client = discord.client
 client = commands.Bot(command_prefix = '/')
-Clientdiscord = discord.Client()
+Clientdiscord = discord.Client('NDkxNzI0MzA3Mzc4OTk1MjE5.DoMNKg.3zX2o_YSVoo_TEuctOjewwbFrBg')
 
 
 @client.event
