@@ -33,7 +33,7 @@ async def on_message(message):
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('/Gay?'):
-        randomlist = ["yes","no"]
+        randomlist = ["yes","no","BIG YES","Somehow, no"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Coinflip'):
         randomlist = ["Heads","Tails"]
@@ -49,7 +49,7 @@ async def on_message(message):
         em.set_image(url='https://cdn.discordapp.com/attachments/490251540905328642/491716618897063936/tenor.png')
         await client.send_message(message.channel, embed=em)
     if message.content == '/Help':
-        await client.send_message(message.channel,'Prefix is /,commands are /Help /DIO /Invite /About /Gay? /Dice /Coinflip /Whogay?.')
+        await client.send_message(message.channel,'Prefix is /,commands are /Help (Brings you to this no shit) /DIO /Invite /About /Gay? /Dice /Coinflip /Whogay?.')
     if message.content == '/Invite':
         await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
