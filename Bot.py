@@ -11,6 +11,7 @@ from discord import Game
 Client = discord.client
 client = commands.Bot(command_prefix = '/')
 Clientdiscord = discord.Client()
+game=discord.Game(name="If u reading this u gay ha(/Help)"))
 
 
 @client.event
