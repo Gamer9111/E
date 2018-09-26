@@ -11,7 +11,6 @@ from discord import Game
 Client = discord.client
 client = commands.Bot(command_prefix = '/')
 Clientdiscord = discord.Client()
-game=discord.Game(name="If u reading this u gay ha(/Help)")
 
 
 @client.event
@@ -19,6 +18,8 @@ async def on_member_join(member):
     print('Recognised that a member called ' + member.name + ' joined')
     await client.send_message(member, 'Good fucking job, you joined absolute cancer')
     print('Sent message to ' + member.name)
+
+@client.event
 async def on_ready():
     print("I hate you")
     await client.chage_presence(game=discord.Game(name="U reading this U gay ha"))
