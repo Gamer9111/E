@@ -30,11 +30,8 @@ async def on_message(message):
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
     if message.content == 'ORA ORA ORA':
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
-    if message.content == 'Waluigi for smash':
-        await client.send_message(message.channel,'yes https://media.discordapp.net/attachments/521515225254461450/530868806625656852/unknown.png')     
     if message.content == 'why u bully me':
-        msg = 'die'.format(message)
-        await client.send_message(message.channel, msg)
+        await client.send_message(message.channel,'die')
     if message.content == 'ur mum gay':
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
         await client.send_message(message.channel, msg)
