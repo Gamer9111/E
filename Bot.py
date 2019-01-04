@@ -13,13 +13,13 @@ Clientdiscord = discord.Client()
 
 
 @client.event
+async def on_member_join(member):
+    print('Recognised that a member called ' + member.name + ' joined')
+    await client.send_message(member, 'Why did you join this cancer')
+    print('Sent message to ' + member.name)
 async def on_ready():
-    await client.change_presence(game=Game(name=' I hate all of you '))
-    print('die') 
-
-
-@client.event
-async def on_message(message):
+    await client.change_presence(game=Game(name='      '))
+    print('Ready, Freddy') 
 
 
 
