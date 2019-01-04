@@ -42,6 +42,7 @@ async def on_message(message):
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Coinflip'):
         randomlist = ["Heads","Tails"]
+        await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Gayest?'):
         randomlist = ["Gage"]
         await client.send_message(message.channel,(random.choice(randomlist)))
