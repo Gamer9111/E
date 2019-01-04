@@ -22,7 +22,7 @@ async def on_message(message):
     if message.content == 'ORA ORA ORA':
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
    if message.content == 'Waluigi for smash':
-        await client.send_message(message.channel,'yes https://media.discordapp.net/attachments/521515225254461450/530868806625656852/unknown.png?width=164&height=100')     
+        await client.send_message(message.channel,'yes https://media.discordapp.net/attachments/521515225254461450/530868806625656852/unknown.png')     
     if message.content == 'why u bully me':
         msg = 'die'.format(message)
     if message.content == 'ur mum gay':
@@ -47,7 +47,7 @@ async def on_message(message):
         em.set_image(url='https://cdn.discordapp.com/attachments/490251540905328642/491716618897063936/tenor.png')
         await client.send_message(message.channel, embed=em)
     if message.content == '/Help':
-        await client.send_message(message.channel,'Prefix is /,commands are /Help (Brings you to this no shit) /DIO /Invite /About /Gay? /Gayest? /Dice /Coinflip /Whogay?.')
+        await client.send_message(message.channel,'Prefix is /,commands are /Help /DIO /Invite /About /Gay? /Gayest? /Dice /Coinflip /Whogay?.')
     if message.content == '/Invite':
         await client.send_message(message.channel,'Why tho? https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
