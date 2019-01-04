@@ -39,7 +39,7 @@ async def on_message(message):
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('/Gay?'):
-        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit like how did u not know","let me tell you, this is extremely fucking suprising and i thought he would be, but no"]
+        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit like how did u not know","this is extremely fucking suprising, but no"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Coinflip'):
         randomlist = ["Heads","Tails"]
