@@ -13,16 +13,6 @@ client = commands.Bot(command_prefix = '/')
 Clientdiscord = discord.Client()
 
 
-@client.event
-async def on_member_join(member):
-    print('Recognised that a member called ' + member.name + ' joined')
-    await client.send_message(member, 'Good fucking job, you joined absolute cancer')
-    print('Sent message to ' + member.name)
-
-@client.event
-async def on_ready():
-    print("I hate you")
-    await client.chage_presence(game=discord.Game(name="U reading this U gay ha"))
 
 
 @client.event
@@ -34,12 +24,12 @@ async def on_message(message):
    if message.content == 'Waluigi for smash':
         await client.send_message(message.channel,'yes https://media.discordapp.net/attachments/521515225254461450/530868806625656852/unknown.png?width=164&height=100')     
     if message.content == 'why u bully me':
-        msg = 'go fucking kill yourself'.format(message)
+        msg = 'die'.format(message)
     if message.content == 'ur mum gay':
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('/Gay?'):
-        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit like how did u not know","this is extremely fucking suprising, but no"]
+        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit like how did u not know"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Coinflip'):
         randomlist = ["Heads","Tails"]
