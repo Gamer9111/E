@@ -52,7 +52,7 @@ async def on_message(message):
     if message.content == '/Help':
         await client.send_message(message.channel,'Prefix is /,commands are /Help /DIO /Invite /About /Gay? /Dice /Coinflip /Whogay?.')
     if message.content == '/Invite':
-        await client.send_message(message.channel,'Why? https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
+        await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
      await client.send_message(message.channel,'This Abomination is made by the scam artist, मुझे गर्व है स्कैमर#5082')
 client.run(os.getenv('TOKEN'))
