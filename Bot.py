@@ -18,7 +18,7 @@ async def on_member_join(member):
     await client.send_message(member, 'Why did you join this cancer')
     print('Sent message to ' + member.name)
 async def on_ready():
-    await client.change_presence(game=Game(name='      '))
+    await client.change_presence(game=Game(name='Test'))
     print('Ready, Freddy') 
 
 
@@ -30,19 +30,14 @@ async def on_message(message):
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
     if message.content == 'ORA ORA ORA':
         await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
-    if message.content == 'why u bully me':
-        await client.send_message(message.channel,'die')
     if message.content == 'ur mum gay':
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('/Gay?'):
-        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit like how did u not know"]
+        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Coinflip'):
         randomlist = ["Heads","Tails"]
-        await client.send_message(message.channel,(random.choice(randomlist)))
-    if message.content.startswith('/Gayest?'):
-        randomlist = ["Gage"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Dice'):
         randomlist = ["1","2","3","4","5","6"]
@@ -57,7 +52,7 @@ async def on_message(message):
     if message.content == '/Help':
         await client.send_message(message.channel,'Prefix is /,commands are /Help /DIO /Invite /About /Gay? /Dice /Coinflip /Whogay?.')
     if message.content == '/Invite':
-        await client.send_message(message.channel,'Why tho? https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
+        await client.send_message(message.channel,'Why? https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
     if message.content == '/About':
      await client.send_message(message.channel,'This Abomination is made by the scam artist, मुझे गर्व है स्कैमर#5082')
 client.run(os.getenv('TOKEN'))
