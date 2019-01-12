@@ -15,45 +15,43 @@ Clientdiscord = discord.Client()
 @client.event
 async def on_member_join(member):
     print('Recognised that a member called ' + member.name + ' joined')
-    await client.send_message(member, 'Why did you join this cancer')
+    await client.send_message(member, 'why the fuck would you join this dead but cancerous chat?')
     print('Sent message to ' + member.name)
 async def on_ready():
-    await client.change_presence(game=Game(name='Test'))
+    await client.change_presence(game=Game(name='Suffering'))
     print('Ready, Freddy') 
-
-
 
 
 @client.event
 async def on_message(message):
-    if message.content == 'MUDA MUDA MUDA':
-        await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
-    if message.content == 'ORA ORA ORA':
-        await client.send_message(message.channel,'https://cdn.discordapp.com/attachments/491716472779833346/493922656278806528/MUDA_ORA_MUDA_ORA_MUDA_ORA.gif')
-    if message.content == 'ur mum gay':
-        msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
-        await client.send_message(message.channel, msg)
-    if message.content.startswith('/Gay?'):
-        randomlist = ["yes","no","not yet","BIG YES","Somehow, no","no shit"]
-        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content == '/DIO':
+        await client.send_message(message.channel,'go away')
     if message.content.startswith('/Coinflip'):
-        randomlist = ["Heads","Tails"]
+        randomlist = ["Heads","Tails","Not Heads","Very Tails"]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('/Dice'):
         randomlist = ["1","2","3","4","5","6"]
         await client.send_message(message.channel,(random.choice(randomlist)))
-    if message.content.startswith('/Whogay?'):
-        randomlist = ["U","Fag Above You","The Fag Above The Fag Above You","The Next Prick Who Types","The Prick after the Next Prick Who Types"]
+    if message.content.startswith('/Gay?'):
+        randomlist = ["Yes","Big Yes","suprisingly now","somehow no"]
         await client.send_message(message.channel,(random.choice(randomlist)))
-    if message.content == '/DIO':
-        em = discord.Embed(description='ZA WARUDO')
-        em.set_image(url='https://cdn.discordapp.com/attachments/490251540905328642/491716618897063936/tenor.png')
+    if message.content.startswith('/Whogay?'):
+        randomlist = ["U","cunt above","fag above the fag above u","fag below u"]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('/Bully '):
+        await client.send_message(message.channel,'no u <@%s>'  %(message.author.id))
+    if ('Bowsette ') in message.content:
+       await client.delete_message(message)
+    if message.content == 'MUDA MUDA MUDA MUDA':
+        await client.send_message(message.channel,'https://i.imgur.com/oNcHdPX.gif')
+    if message.content == 'ORA ORA ORA ORA':
+        await client.send_message(message.channel,'http://66.media.tumblr.com/66f1f8fa7ef2baecf39a6086cde3e6cc/tumblr_n9a645JX891r2swomo2_r1_500.gif')
+    if message.content == 'Pepsi':
+        em = discord.Embed(description='Bebsi better')
+        em.set_image(url='https://saudislike.files.wordpress.com/2009/05/pepsi.jpg')
         await client.send_message(message.channel, embed=em)
     if message.content == '/Help':
-        await client.send_message(message.channel,'Prefix is /,commands are /Help /DIO /Invite /About /Gay? /Dice /Coinflip /Whogay?.')
-    if message.content == '/Invite':
-        await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
-    if message.content == '/About':
-     await client.send_message(message.channel,'This Abomination is made by the scam artist, मुझे गर्व है स्कैमर#5082')
+        await client.send_message(message.channel,'The commands for this pile of shit are /Whogay, /Gay, /Coinflip, /Dice, /Bully, and /DIO. ')
+
 client.run(os.getenv('TOKEN'))
 
