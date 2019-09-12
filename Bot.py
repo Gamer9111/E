@@ -5,9 +5,13 @@ import asyncio
 import time
 import os
 
-Client = discord.Client()
-client = commands.Bot(command_prefix = '/')
-Clientdiscord = discord.Client()
+@client.event
+async def on_member_join(member):
+    print('Recognised that a member called ' + member.name + ' joined')
+    await client.send_message(member, 'Wow you joined this cancer, why? Prefix is /')
+    print('Sent message to ' + member.name)
+async def on_ready():
+    await client.change_presence(game=Game(name="No"))
 
 @client.event
 async def on_message(message):
@@ -42,7 +46,7 @@ async def on_message(message):
         msg = 'No U Cunt https://cdn.discordapp.com/attachments/491716472779833346/493927255479812096/2Q.png'.format(message)
     if message.content == '/Invite':
         await client.send_message(message.channel,'https://discordapp.com/oauth2/authorize?client_id=491724307378995219&scope=bot&permissions=8')
-    if message.content =='/About':
+    if message.content == '/About':
         await client.send_message(message.channel,'Made by Gamer911#5082'.format(message)
                                   
 client.run(os.getenv('TOKEN'))
